@@ -5,7 +5,7 @@ import React from 'react';
 const UsersList = ({ users, selectUser, getUsers }) => {
 
     const deleteUser = (id) => {
-        axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`)
+        axios.delete(`https://users-crud.academlo.tech/users/${id}/`)
             .then(res => {
                 getUsers()
                 console.log(res);

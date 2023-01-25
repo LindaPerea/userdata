@@ -27,7 +27,7 @@ const UsersForm = ({ getUsers, userSelected, deselectUser }) => {
         if (userSelected) {
             // actualizando user
             axios
-                .put(`https://users-crud1.herokuapp.com/users/${userSelected.id}/`, data)
+                .put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
                 .then(() => {
                     getUsers();
                     deselectUser();
@@ -36,7 +36,7 @@ const UsersForm = ({ getUsers, userSelected, deselectUser }) => {
         } else {
             // creando user
             axios
-                .post('https://users-crud1.herokuapp.com/users/', data)
+                .post('https://users-crud.academlo.tech/users/', data)
                 .then(() => getUsers())
                 .catch(error => console.log(error.response?.data));
 

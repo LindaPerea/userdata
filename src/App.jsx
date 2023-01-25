@@ -11,12 +11,13 @@ function App() {
   const [userSelected, setUSerSelected] = useState(null)
 
   useEffect(() => {
-    axios.get('https://users-crud1.herokuapp.com/users/')
+    // axios.get('https://users-crud1.herokuapp.com/users/')
+    axios.get('https://users-crud.academlo.tech/users/')
       .then(res => setUsers(res.data));
   }, [])
 
   const getUsers = () => {
-    axios.get('https://users-crud1.herokuapp.com/users/')
+    axios.get('https://users-crud.academlo.tech/users/')
       .then(res => setUsers(res.data));
   }
 
