@@ -60,6 +60,7 @@ const UsersForm = ({ getUsers, userSelected, deselectUser }) => {
         <form className='container' onSubmit={handleSubmit(submit)}>
 
             <h1>New User</h1>
+            <b className='return-portafolio'><a href="https://lindapereafullstack.netlify.app/#/proyects">Regresar a Portafolio</a></b>
             <div className='align-name'>
                 <div className='input-container'>
                     <i class="fa-solid fa-user"></i>
@@ -101,6 +102,7 @@ const UsersForm = ({ getUsers, userSelected, deselectUser }) => {
                     id='birthday' {...register("birthday")}
                 />
             </div>
+            
             <div className='container-buttons-list'>
                 <button  className='buttons-list'>
                     Upload
